@@ -80,7 +80,7 @@ fi
 
 # Step 4: Run the Nuclei Fuzzing templates on paramspider_output.txt file
 echo "Running Nuclei on paramspider_output.txt"
-nuclei -l output/paramspider_output.txt -t "$home_dir/fuzzing-templates" -rl 05
+nuclei -l output/paramspider_output.txt -t "$home_dir/fuzzing-templates" -rl 50 -stats
 
 # Step 5: End with general message as the scan is completed
 echo "Scan is completed - Happy Fuzzing"
